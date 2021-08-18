@@ -146,7 +146,8 @@ namespace VBASync.Model
                             case 0x0014:
                             case 0x0008:
                             case 0x0007:
-                                // PROJECTLCID, PROJECTLCIDINVOKE, PROJECTLIBFLAGS, and PROJECTHELPCONTEXT
+                            case 0x004a:
+                                // PROJECTLCID, PROJECTLCIDINVOKE, PROJECTLIBFLAGS, PROJECTHELPCONTEXT, and PROJECTCOMPATVERSION
                                 seek(8); // seek past whole record (always 8 bytes long)
                                 break;
                             case 0x0003:
